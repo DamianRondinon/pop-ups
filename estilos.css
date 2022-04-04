@@ -1,7 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+
 body{
-    background-color: #212025;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-weight: 500;
     }
 
-    .container {
-        
+    .container .popup, .popup2{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 40vh;
     }
+
+.popup, .popup2{
+    background-color: #ffff;
+    position: relative;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+    cursor: default;
+    transition: all 200ms ease
+    }
+
+    .popup:hover, .popup2:hover{
+        width: 415px;
+        height: 365px;
+        transform: translateY(-3%);
+        box-shadow: 10px;
+        box-shadow: 0px 5px 5px -6px
+}
+
+a{
+    text-decoration: none;
+    font-family: monospace;
+    color: #c7c8ca;
+    font-size: 2em;
+    margin: 0em 1em 0em 13em;
+    opacity: 0.5;
+}
+
+.popup-img{
+    width: 150px;
+}
+
+.popup:hover .popup-img{
+width: 160px;
+transition: all 300ms;
+}
+
+.popup-p{
+    text-align: center;
+    margin: 20px 70px 20px 70px;
+
+}
+
+.popup-button{
+cursor: pointer;
+background-color: #ed6755;
+color: #ffff;
+border-style: none;
+margin-top: 25px;
+width: 150px;
+height: 50px;
+border-radius: 5px;
+box-shadow: 200px;
+box-shadow: 0px 10px 10px -6px #ed6755;
+}
+
+.popup #button:hover{
+    background-color: #cd4928;
+}
+
+.popup2-button{
+    background-color: #2c3e50;
+    box-shadow: rgb(38, 28, 92);
+    cursor: pointer;
+color: #ffff;
+border-style: none;
+margin-top: 25px;
+width: 150px;
+height: 50px;
+border-radius: 5px;
+box-shadow: 200px;
+}
+
+.popup2-img{
+    width: 80px;
+    
+}
+
+.popup2:hover .popup2-img{
+    width: 110px;
+    transition: all 600ms;
+}
+
+.popup2-p{
+    text-align: center;
+    margin: 20px 70px 20px 70px;
+}
